@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .form {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.wrapper .form input {
+  padding: 10px 0px;
+  font-size: 20px;
+  outline: none;
+  padding-left: 5px;
+  border: 2px solid rgb(22, 22, 22);
+}
+
+.wrapper-books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 76%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrapper-books .book-info {
+  padding: 20px;
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  min-height: 300px;
+}
+.wrapper-books .book-info a {
+  text-decoration: none;
+  color: rgb(23, 22, 22);
+  margin-bottom: 8px;
+}
+.wrapper-books .book-info .img {
+  height: 180px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #000;
+  margin-bottom: 26px;
+}
+.wrapper-books .book-info .img img {
+  height: 180px;
+  width: 120px;
+}
+
+@media screen and (max-width: 1343px) {
+  .wrapper-books {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
